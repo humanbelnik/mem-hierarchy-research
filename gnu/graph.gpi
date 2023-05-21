@@ -1,0 +1,19 @@
+#!/usr/bin/gnuplot -persist
+
+reset
+NO_ANIMATION = 1
+
+set datafile separator '|'
+set title "Matrix multiplication"
+set xlabel "Size"
+set ylabel "Time, ms"
+set grid
+set key left box
+set size 1,1
+
+plot './data/proc/mult_default_O0.csv' title 'Default, O0' w lp lt 1  lc "red" lw 1 dt 1
+replot './data/proc/mult_default_O3.csv' title 'Default, O3' w lp lt 2  lc "green" lw 1 dt 1
+replot './data/proc/mult_default_Os.csv' title 'Default, Os' w lp lt 3  lc "blue" lw 1 dt 1
+replot './data/proc/mult_transpose_O0.csv' title 'Transpose, O0' w lp lt 4  lc "purple" lw 1 dt 1
+replot './data/proc/mult_transpose_O3.csv' title 'Transpose, O3' w lp lt 5  lc "cyan" lw 1 dt 1
+replot './data/proc/mult_transpose_Os.csv' title 'Transpose, Os' w lp lt 6  lc "orange" lw 1 dt 1

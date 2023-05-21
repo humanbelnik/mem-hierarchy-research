@@ -20,11 +20,11 @@ void transpose(int (*matrix)[SIZE]);
 long long unsigned milliseconds_now(void);
 
 
+int matrix_first[SIZE][SIZE];
+int matrix_second[SIZE][SIZE];
+int matrix_result[SIZE][SIZE]= { 0 };
 int main(void)
 {
-    int matrix_first[SIZE][SIZE];
-    int matrix_second[SIZE][SIZE];
-    int matrix_result[SIZE][SIZE]= { 0 };
 
     init(matrix_first); 
     init(matrix_second);
