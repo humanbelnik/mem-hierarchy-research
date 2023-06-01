@@ -21,4 +21,4 @@ Measure time of matrices multiplication operation **with transposing** and **wit
 ## Results:
 * Despite of more operations, matrices multiplicatiopn with transposing is much faster. This result is a consequence of the computer memory architecture, especially memory hierarchy. CPU makes mush less requests to the deeper levels of memeory when we transpose the 2nd matrix.
 
-![alt text](~/code/mem-hier-research/pic/graph.png "Title")
+[graph.pdf](https://github.com/humanbelnik/mem-hierarchy-research/files/11624078/graph.pdf)
